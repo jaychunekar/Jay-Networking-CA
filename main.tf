@@ -50,7 +50,7 @@ resource "aws_instance" "zander_server" {
     }
     
     provisioner "local-exec" {
-        command = "sleep 30 && ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i '${self.public_ip},' -u ec2-user --private-key ~/.ssh/jaykey deploy.yml"
+        command = "sleep 30 && ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i '${self.public_ip},' -u ec2-user --private-key jaykey deploy.yml"
     }
 }
 output "instance_public_ip" {
