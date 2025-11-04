@@ -30,8 +30,13 @@ resource "aws_security_group" "zander_security_group" {
         cidr_blocks = ["0.0.0.0/0"]//allow all outgoing traffic
     } 
 }
+
+variable "key_name" {
+  type = string
+  default = "jaykey_key"
+}
 resource "aws_key_pair" "zander_key" {
-    key_name = "zander_key"
+    key_name = var.key_name
     public_key = file("jaykey.pub")
   
 }
