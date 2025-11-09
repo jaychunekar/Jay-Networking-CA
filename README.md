@@ -6,7 +6,7 @@ This project demonstrates the automation of a Dockerized web application deploym
 
 ## **Project Overview**
 
-The project automates the deployment of a sample web application hosted on an **Nginx** server. The application is containerized using **Docker** and deployed on an **Amazon Web Services(VM)**. The infrastructure is provisioned using **Terraform**, and the CI/CD pipeline is implemented using **GitHub Actions**.
+The project automates the deployment of a sample web application hosted on an **Nginx** server. The application is containerized using **Docker** and deployed on an **Amazon Web Services**. The infrastructure is provisioned using **Terraform**, and the CI/CD pipeline is implemented using **GitHub Actions**.
 
 ---
 
